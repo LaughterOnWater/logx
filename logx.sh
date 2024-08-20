@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# LOGX - DreamHost Log Analysis Tool
+# https://github.com/LaughterOnWater/logx
+#
+# Author: LaughterOnWater (https://github.com/LaughterOnWater)
+# License: MIT
+
 # Default configuration
 HOME_DIR="${HOME_DIR:-$HOME}"
 LOGS_DIR="${LOGS_DIR:-$HOME_DIR/logs}"
