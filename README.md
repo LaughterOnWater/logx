@@ -58,6 +58,7 @@ Options:
 - `-d, --disk`: Analyze disk usage
 - `-r, --resources`: Check current resource usage
 - `-h, --help`: Display help message
+- `-v, --version`: Display logx version
 
 Examples:
 ```
