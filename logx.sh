@@ -5,9 +5,9 @@
 #
 # Author: LaughterOnWater (https://github.com/LaughterOnWater)
 # License: MIT
-# Version: 1.0.0
+# Version: 1.0.1
 
-VERSION="1.0.0"
+VERSION="1.0.1"
 
 # Default configuration
 HOME_DIR="${HOME_DIR:-$HOME}"
@@ -311,7 +311,8 @@ resource_usage() {
 
 # Function to print usage information
 print_usage() {
-    echo "Usage: $0 [OPTION]"
+#    echo "Usage: $0 [OPTION]" # aliased in bash file 2024.08.20
+    echo "Usage: logx [OPTION]"
     echo "Analyze access and error logs, disk usage, and resource usage for a web server."
     echo
     echo "Options:"
@@ -323,10 +324,11 @@ print_usage() {
     echo "  -v, --version   Display logx version"
     echo
     echo "Examples:"
-    echo "  $0 -a           Analyze access log"
-    echo "  $0 --error      Analyze error log"
-    echo "  $0 --disk       Analyze disk usage"
-    echo "  $0 --resources  Check resource usage"
+#    echo "  $0 -a           Analyze access log" # aliased in bash file 2024.08.20
+    echo "  logx -a           Analyze access log"
+    echo "  logx --error      Analyze error log"
+    echo "  logx --disk       Analyze disk usage"
+    echo "  logx --resources  Check resource usage"
     echo
     echo "If no option is provided, this help message will be displayed."
 }
