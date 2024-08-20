@@ -5,6 +5,9 @@
 #
 # Author: LaughterOnWater (https://github.com/LaughterOnWater)
 # License: MIT
+# Version: 1.0.0
+
+VERSION="1.0.0"
 
 # Default configuration
 HOME_DIR="${HOME_DIR:-$HOME}"
@@ -37,6 +40,14 @@ selected_domain="${selected_domain:-}"
 # Global variables
 ACCESS_LOG=""
 ERROR_LOG=""
+
+# Function to display version information
+show_version() {
+    echo "LOGX version $VERSION"
+    echo "Copyright (c) $(date +%Y) LaughterOnWater"
+    echo "License: MIT"
+    echo "https://github.com/LaughterOnWater/logx"
+}
 
 # Function to list available domains and prompt for selection
 select_domain() {
@@ -309,6 +320,7 @@ print_usage() {
     echo "  -d, --disk      Analyze disk usage"
     echo "  -r, --resources Check current resource usage"
     echo "  -h, --help      Display this help message"
+    echo "  -v, --version   Display logx version"
     echo
     echo "Examples:"
     echo "  $0 -a           Analyze access log"
@@ -336,6 +348,10 @@ main() {
             ;;
         -h|--help|"")
             print_usage
+            ;;
+		-v|--version)
+            show_version
+            exit 0
             ;;
         *)
             echo "Error: Invalid option '$1'" >&2
