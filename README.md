@@ -31,11 +31,18 @@ LOGX offers a rapid overview of server logs and resources, designed for DreamHos
    ```
    chmod +x logx.sh
    ```
-3. Set appropriate permissions for the configuration file:
+3. Add the appropriate alias to your aliases in .bash_profile:
    ```
-   chmod 644 logx.conf
+   alias logx="/home/<user>/path/to/logx/logx.sh"
    ```
-
+4. Refresh the .bash_profile:
+   ```
+   source .bash_profile
+   ```
+5. Test the script:
+   ```
+   logx
+   ``` 
 ## Project Structure
 
 ```
