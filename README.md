@@ -2,6 +2,8 @@
 
 LOGX offers a rapid overview of server logs and resources, designed for DreamHost shared servers. It's a handy tool for quick checks and basic monitoring of log activity and server status.
 
+**Version: 1.0.1**
+
 ## Author
 
 **LaughterOnWater**
@@ -92,3 +94,8 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Changes
+
+1.0.1 - Edited directions and methodology so the logx can be available from anywhere in shell via .bash_profile alias.
+1.0.0 - Earliest version
