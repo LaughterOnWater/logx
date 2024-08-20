@@ -58,7 +58,7 @@ logx/
 ## Usage
 
 ```
-./logx.sh [OPTION]
+logx [OPTION]
 ```
 
 Options:
@@ -71,10 +71,10 @@ Options:
 
 Examples:
 ```
-./logx.sh -a
-./logx.sh --error
-./logx.sh --disk
-./logx.sh --resources
+logx -a
+logx --error
+logx --disk
+logx --resources
 ```
 
 ## Configuration
